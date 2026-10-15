@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-receipt"
+version = "0.1.0"
+description = "A receipt for what your AI coding agent did: cost, files touched, commands run, and red flags. Works with Claude Code and Codex."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Saurabh Manmode" }]
+keywords = ["claude-code", "codex", "ai-agents", "llm", "cost", "audit", "cli", "developer-tools"]
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/SaurabhManmode/agent-receipt"
+
+[project.scripts]
+agent-receipt = "agent_receipt.cli:main"
+
+[tool.setuptools]
+packages = ["agent_receipt"]

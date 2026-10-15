@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
+agent-receipt-*.html
+tests/fixtures/_tmp.html
